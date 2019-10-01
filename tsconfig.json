@@ -8,7 +8,9 @@
 
         "outDir": "./dist",
 
+        "strict": true,
         "noImplicitAny": true,
+        "esModuleInterop": true,
 
         "typeRoots": [
             "node_modules/@types"
@@ -16,10 +18,7 @@
         "types": [
             "jest"
         ],
-        "baseUrl": "./src",
-        "paths": {
-            "~/*": ["./src*"]
-        }
+        "baseUrl": "."
     },
     "include": [
         "./src/**/*"
