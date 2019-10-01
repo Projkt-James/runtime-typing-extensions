@@ -1,4 +1,4 @@
-import "~/index";
+import "../src/index";
 
 test("empty string isString retuns true", async () => {
     expect("".isString()).toBe(true);

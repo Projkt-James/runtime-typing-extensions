@@ -1,4 +1,4 @@
-import "~/index";
+import "../src/index";
 
 test('4 isNumber returns true', async () => {
     expect((4).isNumber()).toBe(true);

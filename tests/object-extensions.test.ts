@@ -1,4 +1,4 @@
-import "~/index";
+import "../src/index";
 
 test('object isObject returns true', async () => {
     expect(({}).isObject()).toBe(true);

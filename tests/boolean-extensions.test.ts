@@ -1,4 +1,4 @@
-import "~/index";
+import "../src/index";
 
 test('True isBoolean returns true', async () => {
     expect(true.isBoolean()).toBe(true);
