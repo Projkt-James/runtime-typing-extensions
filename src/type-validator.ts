@@ -21,4 +21,8 @@ export default abstract class TypeValidator {
         return (typeof (val) === 'object');
     }
 
+    public static isArray<T>(val: T): boolean {
+        return Object.prototype.toString.call(val) === '[object Array]';
+    }
+
 }
