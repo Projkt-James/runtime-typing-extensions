@@ -4,7 +4,7 @@ declare global {
         isString(): boolean;
         isBoolean(): boolean;
         isObject(): boolean;
-        isNullOrUndefined(obj: any): boolean;
+        isNullOrUndefined(obj: object | undefined | null): boolean;
     }
 }
 export {};
