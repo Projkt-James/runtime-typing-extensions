@@ -6,7 +6,7 @@ declare global {
         isString(): boolean;
         isBoolean(): boolean;
         isObject(): boolean;
-        isNullOrUndefined(obj: any): boolean;
+        isNullOrUndefined(obj: object | undefined | null): boolean;
     }
 }
 
@@ -22,6 +22,6 @@ Object.prototype.isBoolean = function (): boolean {
 Object.prototype.isObject = function (): boolean {
     return TypeValidator.isObject(this);
 }
-Object.isNullOrUndefined = function (obj: any): boolean {
+Object.isNullOrUndefined = function (obj: object | undefined | null): boolean {
     return ((obj === null) || TypeValidator.isUndefined(obj));
 }

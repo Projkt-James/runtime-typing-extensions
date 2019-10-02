@@ -26,14 +26,17 @@ test('undefined isNullOrUndefined returns true', async () => {
 });
 
 test('boolean isNullOrUndefined returns false', async () => {
+    // @ts-ignore
     expect(Object.isNullOrUndefined(true)).toBe(false);
 });
 test('number isNullOrUndefined returns false', async () => {
+    // @ts-ignore
     expect(Object.isNullOrUndefined(123)).toBe(false);
 });
 test('object isNullOrUndefined returns false', async () => {
     expect(Object.isNullOrUndefined({})).toBe(false);
 });
 test('string isNullOrUndefined returns false', async () => {
+    // @ts-ignore
     expect(Object.isNullOrUndefined("test")).toBe(false);
 });
