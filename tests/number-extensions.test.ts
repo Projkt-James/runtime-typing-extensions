@@ -10,6 +10,14 @@ test('NaN isNumber returns true', async () => {
     expect((NaN).isNumber()).toBe(true);
 });
 
+test('number enum member isNumber returns true', async () => {
+    enum TestNumberEnum {
+        Value1 = 1,
+        Value2 = 2
+    }
+    expect(TestNumberEnum.Value1.isNumber()).toBe(true);
+});
+
 // isBoolean
 test('100 isBoolean returns false', async () => {
     expect((100).isBoolean()).toBe(false);
@@ -42,3 +50,4 @@ test('Infinity isObject returns false', async () => {
 test('NaN isObject returns false', async () => {
     expect((NaN).isObject()).toBe(false);
 });
+

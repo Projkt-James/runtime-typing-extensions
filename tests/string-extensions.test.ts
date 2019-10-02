@@ -18,3 +18,11 @@ test("string isNumber retuns false", async () => {
 test("string isObject retuns false", async () => {
     expect("".isObject()).toBe(false);
 });
+
+test('string enum member isString returns true', async () => {
+    enum TestStringEnum {
+        Value1 = "value 1",
+        Value2 = "value 2"
+    }
+    expect(TestStringEnum.Value1.isString()).toBe(true);
+});
