@@ -2,16 +2,20 @@
     "name": "runtime-typing-extensions",
     "version": "0.6.0",
     "description": "Runtime type validation for typescript primitives",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
+    "main": "lib/index.js",
+    "types": "@types/index.d.ts",
+    "files": [
+        "LICENSE",
+        "README.md",
+        "CHANGELOG.md",
+        "lib",
+        "@types"
+    ],
     "scripts": {
         "ts:compile": "tsc",
         "ts:watch": "tsc -w",
         "test": "jest"
     },
-    "files": [
-        "dist/index.js"
-    ],
     "devDependencies": {
         "@types/jest": "^24.0.18",
         "jest": "^24.9.0",
