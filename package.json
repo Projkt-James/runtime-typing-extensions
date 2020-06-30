@@ -1,8 +1,7 @@
 {
     "name": "runtime-typing-extensions",
-    "version": "0.5.0",
+    "version": "0.6.0",
     "description": "Runtime type validation for typescript primitives",
-    
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "scripts": {
@@ -11,16 +10,14 @@
         "test": "jest"
     },
     "files": [
-        "dist"
+        "dist/index.js"
     ],
-    
     "devDependencies": {
         "@types/jest": "^24.0.18",
         "jest": "^24.9.0",
         "ts-jest": "^24.1.0",
         "typescript": "^3.6.3"
     },
-    
     "jest": {
         "preset": "ts-jest",
         "roots": [

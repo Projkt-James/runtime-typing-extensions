@@ -1,9 +1,9 @@
 {
     "complieOnSave": true,
     "compilerOptions": {
-        "target": "es2015",
+        "target": "es5",
         "module": "commonjs",
-        "lib": ["es2015"],
+        "lib": ["es2017", "es7", "es6", "dom"],
         "declaration": true,
 
         "outDir": "./dist",

@@ -1,7 +1,7 @@
 import "../src/index";
 
 //
-//  isNullOrUndefined
+// isNullOrUndefined
 //
 test('null isNullOrUndefined returns true', async () => {
     expect(Array.isNullOrUndefined(null)).toBe(true);
@@ -40,7 +40,7 @@ test('number isNullOrUndefined throws TypeError', async () => {
 });
 
 //
-//  Array.isNullOrEmpty
+// Array.isNullOrEmpty
 //
 test('null isNullOrEmpty returns true', async () => {
     expect(Array.isNullOrEmpty(null)).toBe(true);

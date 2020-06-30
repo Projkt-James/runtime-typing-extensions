@@ -1,4 +1,3 @@
-import "./boolean-extensions";
-import "./number-extensions";
+import "./array-extensions";
 import "./object-extensions";
-import "./string-extensions";
+import "./type-extensions";

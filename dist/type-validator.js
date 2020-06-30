@@ -1,20 +1,26 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-class TypeValidator {
-    static isNumber(val) {
+var TypeValidator = /** @class */ (function () {
+    function TypeValidator() {
+    }
+    TypeValidator.isNumber = function (val) {
         return (typeof (val) === 'number');
-    }
-    static isString(val) {
+    };
+    TypeValidator.isString = function (val) {
         return (typeof (val) === 'string');
-    }
-    static isBoolean(val) {
+    };
+    TypeValidator.isBoolean = function (val) {
         return (typeof (val) === 'boolean');
-    }
-    static isUndefined(val) {
+    };
+    TypeValidator.isUndefined = function (val) {
         return (typeof (val) === 'undefined');
-    }
-    static isObject(val) {
+    };
+    TypeValidator.isObject = function (val) {
         return (typeof (val) === 'object');
-    }
-}
+    };
+    TypeValidator.isArray = function (val) {
+        return Object.prototype.toString.call(val) === '[object Array]';
+    };
+    return TypeValidator;
+}());
 exports.default = TypeValidator;

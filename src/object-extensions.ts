@@ -1,27 +1,23 @@
 import TypeValidator from "./type-validator";
 
 declare global {
-    export interface Object {
-        isNumber(): boolean;
-        isString(): boolean;
-        isBoolean(): boolean;
-        isObject(): boolean;
+    export interface ObjectConstructor {
+        isEmpty(obj: object): boolean;
         isNullOrUndefined(obj: object | undefined | null): boolean;
+        isObject(obj: any): boolean;
+        isType(obj: object | undefined | null): boolean;
     }
 }
 
-Object.prototype.isNumber = function (): boolean {
-    return TypeValidator.isNumber(this);
-}
-Object.prototype.isString = function (): boolean {
-    return TypeValidator.isString(this);
-}
-Object.prototype.isBoolean = function (): boolean {
-    return TypeValidator.isBoolean(this);
-}
-Object.prototype.isObject = function (): boolean {
-    return TypeValidator.isObject(this);
+Object.isEmpty = function (obj: object): boolean {
+    return Object.keys(obj).length <= 0;
 }
 Object.isNullOrUndefined = function (obj: object | undefined | null): boolean {
     return ((obj === null) || TypeValidator.isUndefined(obj));
+}
+Object.isObject = function (obj: any): boolean {
+    return TypeValidator.isObject(obj);
+}
+Object.isType = function (obj: object | undefined | null): boolean {
+    return TypeValidator.isObject(obj);
 }
